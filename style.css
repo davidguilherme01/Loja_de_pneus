@@ -1,0 +1,133 @@
+/* === RESET BÁSICO === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+header {
+    background-color: white;
+    display: flex;
+    align-items: center;    
+    padding: 15px 50px;     
+    border-bottom: 1px solid #eee; 
+}
+
+
+.logo-container h1 {
+    color: rgba(0, 0, 255, 0.767); 
+    font-size: 24px;
+    line-height: 1;
+}
+
+.logo-container p {
+    color: #666;
+    font-size: 12px;
+}
+
+
+.menu-direita {
+    margin-left: auto;     
+    display: flex;
+    gap: 20px;              
+}
+
+
+.menu-direita button {
+    background-color: transparent; 
+    border: none;                 
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+    transition: 0.5s;              
+}
+
+.menu-direita button:hover {
+    color: rgba(0, 0, 255, 0.767); 
+}
+
+
+
+section.hero-banner {
+    background-color: rgba(0, 0, 255, 0.767); 
+    padding: 80px 50px;        
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    align-items: flex-start;   
+    color: white;
+    min-height: 500px;         
+}
+
+
+.etiqueta {
+    background-color: rgba(255, 255, 255, 0.2); 
+    padding: 6px 12px;
+    border-radius: 20px;       
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;       
+    display: inline-block;
+}
+
+
+section.hero-banner h1 {
+    font-size: 3.5rem;         
+    line-height: 1.1;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+
+section.hero-banner p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    max-width: 600px;          
+    color: rgba(255, 255, 255, 0.9);
+}
+
+
+.botoes-acao {
+    display: flex;
+    gap: 15px;
+}
+
+
+.btn-branco {
+    background-color: white;
+    color: rgba(0, 0, 255, 0.767);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+
+.btn-transparente {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn-cta-header {
+    background-color: rgba(0, 0, 255, 0.767) !important; /* Aplica o azul do seu tema */
+    color: white !important;                 /* Força a cor do texto para branco */
+    padding: 8px 15px;                       /* Adiciona um pouco mais de padding para destacar */
+    border-radius: 5px;                      /* Arredonda os cantos */
+    margin-left: 10px;                       /* Um pequeno espaço extra para separá-lo dos outros botões */
+    font-weight: bold;                       /* Deixa o texto em negrito */
+}
+
+/* Efeito ao passar o mouse */

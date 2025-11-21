@@ -122,12 +122,46 @@ section.hero-banner p {
 }
 
 .btn-cta-header {
-    background-color: rgba(0, 0, 255, 0.767) !important; /* Aplica o azul do seu tema */
-    color: white !important;                 /* Força a cor do texto para branco */
-    padding: 8px 15px;                       /* Adiciona um pouco mais de padding para destacar */
-    border-radius: 5px;                      /* Arredonda os cantos */
-    margin-left: 10px;                       /* Um pequeno espaço extra para separá-lo dos outros botões */
-    font-weight: bold;                       /* Deixa o texto em negrito */
+    background-color: rgba(0, 0, 255, 0.767) !important; 
+    color: white !important;                 
+    padding: 8px 15px;                       
+    border-radius: 5px;                      
+    margin-left: 10px;                      
+    font-weight: bold;                      
 }
 
-/* Efeito ao passar o mouse */
+.products {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.products-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    
+    padding-top: 40px;
+    
+}
+
+.products-cards {
+   padding: 30px;
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   gap: 32px;
+}
+
+.products-cards img {
+    height: 300px;
+}
+
+.products div span {
+    
+    font-weight: bold;
+
+
+}

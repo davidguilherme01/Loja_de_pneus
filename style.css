@@ -243,3 +243,19 @@ section.hero-banner p {
     background-color: purple;
 
 }
+
+.services{
+  display: grid;
+   
+  
+
+}
+
+.services-header {
+    font-size: 27"px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}

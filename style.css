@@ -15,15 +15,20 @@ header {
     border-bottom: 1px solid #eee; 
 }
 
+.logo-container {
+
+}
 
 .logo-container h1 {
     color: rgba(0, 0, 255, 0.767); 
     font-size: 28px;
     line-height: 1;
+    
 }
 
 .logo {
-    height: 100px;
+    height: 70px;
+
 }
 
 .logo-container p {
@@ -174,10 +179,14 @@ section.hero-banner p {
         
    
 }
+.product-description {
+    padding-top: 12px;
+}
 
 .product-card{
    
-   background-color: rgb(40, 70, 140);
+  
+   background-color:rgb(40, 70, 14);
 
     display: flex;
     justify-content: center;
@@ -187,21 +196,18 @@ section.hero-banner p {
     font-size: 20px;
 }
 
-.products-cards img {
-    height: 300px;
-}
-
 .products div span {
     
     font-weight: bold;
 
 }
 
+
 .pneu-imagem {
     width: 100%;       /* Ocupa a largura total do seu contêiner pai */
-    max-width: 500px;  /* Limita a largura máxima da imagem */
-    height: 200px;     /* Define uma altura fixa para o espaço da imagem */
-    
+    max-width: 450px;  /* Limita a largura máxima da imagem */
+    height: 300px;     /* Define uma altura fixa para o espaço da imagem */
+    border-radius: 40px;
     /* Propriedades-chave para evitar distorção: */
     object-fit: cover; /* Faz a imagem cobrir o espaço definido, cortando o excesso */
 }
@@ -220,15 +226,20 @@ section.hero-banner p {
 
 .lista-orçamento p {
     padding-bottom: 10px;
-    color: #0000ffc4;
+    color: rgb(255, 102, 0);
     font-size: 20px;
 }
 
 .lista-orçamento button {
-    background-color:#155dfc;
+    background-color:#0000ffc4;
     color: white;
     font-weight: bold;
     font-size: 20px;
     padding: 10px 10px;
     border-radius: 10px;
+}
+
+.lista-orçamento button:hover {
+    background-color: purple;
+
 }

@@ -18,13 +18,18 @@ header {
 
 .logo-container h1 {
     color: rgba(0, 0, 255, 0.767); 
-    font-size: 24px;
+    font-size: 28px;
     line-height: 1;
+}
+
+.logo {
+    height: 100px;
 }
 
 .logo-container p {
     color: #666;
-    font-size: 12px;
+    font-size: 16px;
+   
 }
 
 
@@ -135,6 +140,7 @@ section.hero-banner p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
 .products-header {
@@ -142,17 +148,43 @@ section.hero-banner p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
-    
-    padding-top: 40px;
+    padding: 20px 0;
+   
     
 }
 
+.products-header p {
+    font-size: 24px;
+    
+   
+}
+
+.products-header h2 {
+    font-size: 40px;
+
+}
 .products-cards {
    padding: 30px;
    display: grid;
    grid-template-columns: repeat(4,1fr);
    gap: 32px;
+    Color:white;
+    font-weight: bold;
+    background-color: rgb(66, 66, 66);
+        
+   
+}
+
+.product-card{
+   
+   background-color: rgb(40, 70, 140);
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 20px;
+    border-radius: 40px;
+    font-size: 20px;
 }
 
 .products-cards img {
@@ -163,5 +195,40 @@ section.hero-banner p {
     
     font-weight: bold;
 
+}
 
+.pneu-imagem {
+    width: 100%;       /* Ocupa a largura total do seu contêiner pai */
+    max-width: 500px;  /* Limita a largura máxima da imagem */
+    height: 200px;     /* Define uma altura fixa para o espaço da imagem */
+    
+    /* Propriedades-chave para evitar distorção: */
+    object-fit: cover; /* Faz a imagem cobrir o espaço definido, cortando o excesso */
+}
+
+.lista-beneficios {
+    list-style: none;
+} 
+
+.lista-orçamento {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.lista-orçamento p {
+    padding-bottom: 10px;
+    color: #0000ffc4;
+    font-size: 20px;
+}
+
+.lista-orçamento button {
+    background-color:#155dfc;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 10px;
+    border-radius: 10px;
 }

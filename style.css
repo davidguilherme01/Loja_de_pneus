@@ -140,12 +140,17 @@ section.hero-banner p {
     font-weight: bold;                      
 }
 
+/* ========================================= */
+/* ESTILOS PARA SEÇÃO DE PRODUTOS (PRODUCTS) */
+/* ========================================= */
+
 .products {
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    padding: 60px 50px; /* Adicione padding para a seção */
+    background-color: white; /* Fundo branco para toda a seção de produtos */
 }
 
 .products-header {
@@ -154,108 +159,488 @@ section.hero-banner p {
     align-items: center;
     flex-direction: column;
     padding: 20px 0;
-   
-    
+    margin-bottom: 30px; /* Espaço abaixo do header dos produtos */
 }
 
 .products-header p {
-    font-size: 24px;
-    
-   
+    font-size: 1.1rem; /* Ajuste o tamanho da fonte */
+    color: #666; /* Cor cinza para a descrição */
 }
 
 .products-header h2 {
-    font-size: 40px;
-
+    font-size: 2.5rem; /* Ajuste o tamanho da fonte */
+    color: #333; /* Cor escura para o título */
 }
+
 .products-cards {
-   padding: 30px;
-   display: grid;
-   grid-template-columns: repeat(4,1fr);
-   gap: 32px;
-    Color:white;
-    font-weight: bold;
-    background-color: rgb(66, 66, 66);
-        
-   
-}
-.product-description {
-    padding-top: 12px;
+    /* Remova o padding e background-color daqui, eles serão definidos na seção .products */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px; /* Espaçamento entre os cards */
+    max-width: 1200px; /* Limita a largura máxima para o grid */
+    width: 100%;
 }
 
-.product-card{
-   
-  
-   background-color:rgb(40, 70, 14);
-
+.product-card {
+    background-color: white; /* Fundo branco para o card */
+    border: 1px solid #e0e0e0; /* Borda sutil */
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Sombra suave */
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    padding-top: 20px;
-    border-radius: 40px;
-    font-size: 20px;
+    overflow: hidden; /* Garante que a imagem respeite o border-radius */
+    transition: transform 0.3s ease; /* Efeito hover */
+    padding-bottom: 20px; /* Espaçamento interno na parte inferior */
+    text-align: left; /* Alinha o texto à esquerda */
 }
 
-.products div span {
-    
-    font-weight: bold;
-
+.product-card:hover {
+    transform: translateY(-5px); /* Levanta o card no hover */
 }
-
 
 .pneu-imagem {
-    width: 100%;       /* Ocupa a largura total do seu contêiner pai */
-    max-width: 450px;  /* Limita a largura máxima da imagem */
-    height: 300px;     /* Define uma altura fixa para o espaço da imagem */
-    border-radius: 40px;
-    /* Propriedades-chave para evitar distorção: */
-    object-fit: cover; /* Faz a imagem cobrir o espaço definido, cortando o excesso */
+    width: 100%;
+    height: 200px; /* Altura fixa para as imagens */
+    object-fit: cover;
+    border-radius: 0; /* Remova o border-radius aqui, já que o card tem overflow: hidden */
+    margin-bottom: 15px; /* Espaçamento abaixo da imagem */
+}
+
+.product-description {
+    padding: 0 20px; /* Espaçamento lateral para o texto */
+    margin-bottom: 15px;
+}
+
+.product-card h4 {
+    font-size: 1.2rem;
+    color: #333; /* Cor escura para o título do pneu */
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.product-card p {
+    font-size: 0.95rem;
+    color: #666; /* Cor cinza para a descrição */
+    line-height: 1.5;
 }
 
 .lista-beneficios {
-    list-style: none;
-} 
+    list-style: none; /* Remove marcadores de lista */
+    padding: 0 20px; /* Espaçamento lateral */
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
 
-.lista-orçamento {
-    padding-top: 20px;
+.lista-beneficios li {
+    font-size: 0.9rem;
+    color: #666; /* Cor cinza para os benefícios */
+    margin-bottom: 5px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
+}
+
+.lista-beneficios li::before {
+    content: "✅"; /* Ícone de check para os benefícios */
+    margin-right: 8px;
+    font-size: 0.8rem;
+}
+
+.lista-orçamento {
+    padding: 0 20px; /* Espaçamento lateral */
+    padding-top: 10px; /* Espaçamento acima do preço/botão */
+    display: flex;
+    flex-direction: column; /* Empilha preço e botão */
+    align-items: flex-start; /* Alinha à esquerda */
+    margin-top: auto; /* Empurra para o final do card */
 }
 
 .lista-orçamento p {
     padding-bottom: 10px;
-    color: rgb(255, 102, 0);
-    font-size: 20px;
+    color: #007bff; /* Cor azul para o preço */
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 10px; /* Espaçamento abaixo do preço */
 }
 
 .lista-orçamento button {
-    background-color:#0000ffc4;
+    background-color: #007bff; /* Azul primário para o botão */
     color: white;
     font-weight: bold;
-    font-size: 20px;
-    padding: 10px 10px;
-    border-radius: 10px;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 100%; /* Botão ocupa toda a largura */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .lista-orçamento button:hover {
-    background-color: purple;
-
+    background-color: #0056b3; /* Azul mais escuro no hover */
 }
 
-.services{
-  display: grid;
-   
-  
+/* ========================================= */
+/* ESTILOS PARA A SEÇÃO DE SERVIÇOS (Services) */
+/* ========================================= */
 
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 50px;
+    background-color: white;
+    color: #333;
 }
 
 .services-header {
-    font-size: 27"px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.services-header h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.services-header p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.services-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1200px;
+}
+
+.service-card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Estilos base para o contêiner do ícone (o círculo azul) */
+.icon-wrapper {
+    background-color: #e6f0ff; 
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
+    /* Usa relative para posicionar o ícone gerado (::before) */
+    position: relative; 
+}
+
+/* ------------------------------------------------ */
+/* Geração dos Ícones via CSS (Unicode) */
+/* ------------------------------------------------ */
+
+/* Estilo para gerar o ícone dentro do círculo */
+.icon-wrapper::before {
+    content: ''; /* O conteúdo será definido nas classes específicas */
+    font-size: 36px;
+    color: #007bff;
+    font-family: Arial, sans-serif; /* Use uma fonte que suporte Unicode */
+    display: block;
+}
+
+/* Ícone 1: Montagem e Balanceamento (Chave inglesa/Ferramenta) */
+.icon-montagem::before {
+    content: "\2699"; /* Unicode para 'Gear' (Engrenagem/Ferramenta) */
+    font-weight: bold;
+}
+
+/* Ícone 2: Alinhamento 3D (Relógio/Cronômetro) */
+.icon-alinhamento::before {
+    content: "\23F1"; /* Unicode para 'Stopwatch' (Cronômetro) */
+    font-weight: bold;
+}
+
+/* Ícone 3: Garantia Estendida (Escudo) */
+.icon-garantia::before {
+    content: "\1F6E1"; /* Unicode para 'Shield' (Escudo) */
+    font-weight: normal;
+}
+
+/* ------------------------------------------------ */
+
+.service-card h4 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* ========================================= */
+/* ESTILOS PARA SEÇÃO DE OFERTA (CTA Banner) */
+/* ========================================= */
+
+.offer-banner {
+    background-color: #0000ffc4; /* Azul vibrante */
+    padding: 40px 50px;
+    text-align: center;
+    color: white;
+}
+
+.offer-content h3 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.offer-content p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    opacity: 0.9;
+}
+
+.btn-oferta {
+    background-color: white;
+    color: #0000ffc4; /* Cor do botão inversa ao fundo */
+    border: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.btn-oferta:hover {
+    background-color: #f0f0f0;
+}
+
+/* ========================================= */
+/* ESTILOS PARA SEÇÃO DE DEPOIMENTOS */
+/* ========================================= */
+
+.testimonials {
+    padding: 60px 50px;
+    text-align: center;
+    background-color: #f7f7f7; /* Fundo cinza claro para destacar */
+}
+
+.testimonials-header {
+    margin-bottom: 40px;
+}
+
+.testimonials-header .tag {
+    background-color: #333; /* Fundo preto para a tag */
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.testimonials-header h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.testimonials-header p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.testimonial-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas para os cards */
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto; /* Centraliza o grid */
+}
+
+.testimonial-card {
+    background-color: white;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.testimonial-card .rating {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.testimonial-card h4 {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.testimonial-card .comment {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* ========================================= */
+/* ESTILOS PARA SEÇÃO DE CONTATO E ORÇAMENTO */
+/* ========================================= */
+
+.contact-section {
+    display: flex;
+    padding: 60px 50px;
+    background-color: white;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+/* Coluna do Formulário */
+.contact-form-container {
+    flex: 1; /* Ocupa metade do espaço */
+    padding-right: 40px;
+}
+
+.contact-form-container .tag-contact {
+    background-color: black;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.contact-form-container h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contact-form-container p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.quote-form label {
+    display: block;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+.quote-form input[type="text"],
+.quote-form input[type="email"],
+.quote-form input[type="tel"],
+.quote-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #f7f7f7;
+}
+
+.quote-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.btn-submit {
+    width: 100%;
+    background-color: #007bff; /* Azul primário */
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #0056b3;
+}
+
+
+/* Coluna de Informações de Contato */
+.contact-info-container {
+    flex: 1; /* Ocupa metade do espaço */
+    padding: 30px;
+    border-radius: 8px;
+    /* Aplicando um fundo sutil, conforme a imagem */
+    background-color: #f9f9f9; 
+}
+
+.contact-info-container h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 25px;
+    gap: 15px;
+}
+
+.info-icon {
+    font-size: 24px;
+    color: #007bff;
+    background-color: #e6f0ff;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Ajuste fino para os ícones Unicode/Emoji */
+    padding-top: 5px; 
+}
+
+.info-details {
+    display: flex;
     flex-direction: column;
-    
+}
+
+.info-details .info-label {
+    font-weight: bold;
+    color: #333;
+    font-size: 1rem;
+    margin-bottom: 4px;
+}
+
+.info-details p {
+    color: #555;
+    line-height: 1.4;
+    font-size: 0.95rem;
 }

@@ -140,17 +140,13 @@ section.hero-banner p {
     font-weight: bold;                      
 }
 
-/* ========================================= */
-/* ESTILOS PARA SEÇÃO DE PRODUTOS (PRODUCTS) */
-/* ========================================= */
-
 .products {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 60px 50px; /* Adicione padding para a seção */
-    background-color: white; /* Fundo branco para toda a seção de produtos */
+    padding: 60px 50px; 
+    background-color: white; 
 }
 
 .products-header {
@@ -159,117 +155,115 @@ section.hero-banner p {
     align-items: center;
     flex-direction: column;
     padding: 20px 0;
-    margin-bottom: 30px; /* Espaço abaixo do header dos produtos */
+    margin-bottom: 30px; 
 }
 
 .products-header p {
-    font-size: 1.1rem; /* Ajuste o tamanho da fonte */
-    color: #666; /* Cor cinza para a descrição */
+    font-size: 1.1rem; 
+    color: #666; 
 }
 
 .products-header h2 {
-    font-size: 2.5rem; /* Ajuste o tamanho da fonte */
-    color: #333; /* Cor escura para o título */
+    font-size: 2.5rem; 
+    color: #333; 
 }
 
 .products-cards {
-    /* Remova o padding e background-color daqui, eles serão definidos na seção .products */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 30px; /* Espaçamento entre os cards */
-    max-width: 1200px; /* Limita a largura máxima para o grid */
+    gap: 30px; 
+    max-width: 1200px; 
     width: 100%;
 }
 
 .product-card {
-    background-color: white; /* Fundo branco para o card */
-    border: 1px solid #e0e0e0; /* Borda sutil */
-    border-radius: 10px; /* Cantos arredondados */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Sombra suave */
+    background-color: white; 
+    border: 1px solid #e0e0e0; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); 
     display: flex;
     flex-direction: column;
-    overflow: hidden; /* Garante que a imagem respeite o border-radius */
-    transition: transform 0.3s ease; /* Efeito hover */
-    padding-bottom: 20px; /* Espaçamento interno na parte inferior */
-    text-align: left; /* Alinha o texto à esquerda */
+    overflow: hidden; 
+    transition: transform 0.3s ease; 
+    padding-bottom: 20px; 
+    text-align: left; 
 }
 
 .product-card:hover {
-    transform: translateY(-5px); /* Levanta o card no hover */
+    transform: translateY(-5px); 
 }
 
 .pneu-imagem {
     width: 100%;
-    height: 200px; /* Altura fixa para as imagens */
+    height: 200px; 
     object-fit: cover;
-    border-radius: 0; /* Remova o border-radius aqui, já que o card tem overflow: hidden */
-    margin-bottom: 15px; /* Espaçamento abaixo da imagem */
+    border-radius: 0; 
+    margin-bottom: 15px; 
 }
 
 .product-description {
-    padding: 0 20px; /* Espaçamento lateral para o texto */
+    padding: 0 20px; 
     margin-bottom: 15px;
 }
 
 .product-card h4 {
     font-size: 1.2rem;
-    color: #333; /* Cor escura para o título do pneu */
+    color: #333; 
     margin-bottom: 8px;
     font-weight: 600;
 }
 
 .product-card p {
     font-size: 0.95rem;
-    color: #666; /* Cor cinza para a descrição */
+    color: #666; 
     line-height: 1.5;
 }
 
 .lista-beneficios {
-    list-style: none; /* Remove marcadores de lista */
-    padding: 0 20px; /* Espaçamento lateral */
+    list-style: none; 
+    padding: 0 20px; 
     margin-top: 15px;
     margin-bottom: 15px;
 }
 
 .lista-beneficios li {
     font-size: 0.9rem;
-    color: #666; /* Cor cinza para os benefícios */
+    color: #666; 
     margin-bottom: 5px;
     display: flex;
     align-items: center;
 }
 
 .lista-beneficios li::before {
-    content: "✅"; /* Ícone de check para os benefícios */
+    content: "✅"; 
     margin-right: 8px;
     font-size: 0.8rem;
 }
 
 .lista-orçamento {
-    padding: 0 20px; /* Espaçamento lateral */
-    padding-top: 10px; /* Espaçamento acima do preço/botão */
+    padding: 0 20px; 
+    padding-top: 10px; 
     display: flex;
-    flex-direction: column; /* Empilha preço e botão */
-    align-items: flex-start; /* Alinha à esquerda */
-    margin-top: auto; /* Empurra para o final do card */
+    flex-direction: column; 
+    align-items: flex-start; 
+    margin-top: auto; 
 }
 
 .lista-orçamento p {
     padding-bottom: 10px;
-    color: #007bff; /* Cor azul para o preço */
-    font-size: 1.1rem;
+    color: #007bff; 
     font-weight: bold;
-    margin-bottom: 10px; /* Espaçamento abaixo do preço */
+    margin-bottom: 10px; 
 }
 
 .lista-orçamento button {
-    background-color: #007bff; /* Azul primário para o botão */
+    background-color: #007bff; 
     color: white;
     font-weight: bold;
     font-size: 1rem;
     padding: 10px 20px;
     border-radius: 5px;
-    width: 100%; /* Botão ocupa toda a largura */
+    width: 100%; 
     border: none;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -334,7 +328,7 @@ section.hero-banner p {
     transform: translateY(-5px);
 }
 
-/* Estilos base para o contêiner do ícone (o círculo azul) */
+
 .icon-wrapper {
     background-color: #e6f0ff; 
     border-radius: 50%;
@@ -344,42 +338,38 @@ section.hero-banner p {
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
-    /* Usa relative para posicionar o ícone gerado (::before) */
     position: relative; 
 }
 
-/* ------------------------------------------------ */
-/* Geração dos Ícones via CSS (Unicode) */
-/* ------------------------------------------------ */
 
-/* Estilo para gerar o ícone dentro do círculo */
+
+
 .icon-wrapper::before {
-    content: ''; /* O conteúdo será definido nas classes específicas */
+    content: ''; 
     font-size: 36px;
     color: #007bff;
-    font-family: Arial, sans-serif; /* Use uma fonte que suporte Unicode */
+    font-family: Arial, sans-serif; 
     display: block;
 }
 
-/* Ícone 1: Montagem e Balanceamento (Chave inglesa/Ferramenta) */
+
 .icon-montagem::before {
-    content: "\2699"; /* Unicode para 'Gear' (Engrenagem/Ferramenta) */
+    content: "\2699"; 
     font-weight: bold;
 }
 
-/* Ícone 2: Alinhamento 3D (Relógio/Cronômetro) */
+
 .icon-alinhamento::before {
-    content: "\23F1"; /* Unicode para 'Stopwatch' (Cronômetro) */
+    content: "\23F1"; 
     font-weight: bold;
 }
 
-/* Ícone 3: Garantia Estendida (Escudo) */
+
 .icon-garantia::before {
-    content: "\1F6E1"; /* Unicode para 'Shield' (Escudo) */
+    content: "\1F6E1"; 
     font-weight: normal;
 }
 
-/* ------------------------------------------------ */
 
 .service-card h4 {
     font-size: 1.4rem;
@@ -393,12 +383,8 @@ section.hero-banner p {
     line-height: 1.5;
 }
 
-/* ========================================= */
-/* ESTILOS PARA SEÇÃO DE OFERTA (CTA Banner) */
-/* ========================================= */
-
 .offer-banner {
-    background-color: #0000ffc4; /* Azul vibrante */
+    background-color: #0000ffc4; 
     padding: 40px 50px;
     text-align: center;
     color: white;
@@ -417,7 +403,7 @@ section.hero-banner p {
 
 .btn-oferta {
     background-color: white;
-    color: #0000ffc4; /* Cor do botão inversa ao fundo */
+    color: #0000ffc4; 
     border: none;
     padding: 12px 30px;
     border-radius: 5px;
@@ -432,14 +418,10 @@ section.hero-banner p {
     background-color: #f0f0f0;
 }
 
-/* ========================================= */
-/* ESTILOS PARA SEÇÃO DE DEPOIMENTOS */
-/* ========================================= */
-
 .testimonials {
     padding: 60px 50px;
     text-align: center;
-    background-color: #f7f7f7; /* Fundo cinza claro para destacar */
+    background-color: #f7f7f7; 
 }
 
 .testimonials-header {
@@ -447,7 +429,7 @@ section.hero-banner p {
 }
 
 .testimonials-header .tag {
-    background-color: #333; /* Fundo preto para a tag */
+    background-color: #333; 
     color: white;
     padding: 5px 15px;
     border-radius: 20px;
@@ -471,10 +453,10 @@ section.hero-banner p {
 
 .testimonial-cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 colunas para os cards */
+    grid-template-columns: repeat(3, 1fr); 
     gap: 30px;
     max-width: 1200px;
-    margin: 0 auto; /* Centraliza o grid */
+    margin: 0 auto; 
 }
 
 .testimonial-card {
@@ -504,10 +486,6 @@ section.hero-banner p {
     line-height: 1.6;
 }
 
-/* ========================================= */
-/* ESTILOS PARA SEÇÃO DE CONTATO E ORÇAMENTO */
-/* ========================================= */
-
 .contact-section {
     display: flex;
     padding: 60px 50px;
@@ -517,9 +495,9 @@ section.hero-banner p {
     gap: 40px;
 }
 
-/* Coluna do Formulário */
+
 .contact-form-container {
-    flex: 1; /* Ocupa metade do espaço */
+    flex: 1; 
     padding-right: 40px;
 }
 
@@ -575,7 +553,7 @@ section.hero-banner p {
 
 .btn-submit {
     width: 100%;
-    background-color: #007bff; /* Azul primário */
+    background-color: #007bff; 
     color: white;
     border: none;
     padding: 15px;
@@ -591,12 +569,11 @@ section.hero-banner p {
 }
 
 
-/* Coluna de Informações de Contato */
+
 .contact-info-container {
-    flex: 1; /* Ocupa metade do espaço */
+    flex: 1; 
     padding: 30px;
     border-radius: 8px;
-    /* Aplicando um fundo sutil, conforme a imagem */
     background-color: #f9f9f9; 
 }
 
@@ -623,7 +600,6 @@ section.hero-banner p {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* Ajuste fino para os ícones Unicode/Emoji */
     padding-top: 5px; 
 }
 

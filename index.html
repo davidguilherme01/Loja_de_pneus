@@ -16,19 +16,18 @@
             
         </div>
 
-        <nav class="menu-direita">
-            <button>Início</button>
-            <button>Produtos</button>
-            <button>Serviços</button>
-            <button>Depoimentos</button>
-            <button>Contato</button>
-            <button class="btn-cta-header"> Orçamento</button>
-        </nav>
+       <nav class="menu-direita">
+    <button onclick="scrollToSection('hero-banner')">Início</button>
+    <button onclick="scrollToSection('products')">Produtos</button>
+    <button onclick="scrollToSection('services')">Serviços</button>
+    <button onclick="scrollToSection('testimonials')">Depoimentos</button>
+    <button onclick="scrollToSection('contact-section')">Contato</button>
+    </nav>
     </header>
 
 <main>
 
-    <section class="hero-banner">
+    <section id="hero-banner" class="hero-banner">
         <span class="etiqueta">Líder em vendas de pneus</span>
 
         <h1>Pneus de Qualidade para<br>Sua Segurança</h1>
@@ -43,7 +42,7 @@
         </div>
     </section>
 
-    <section class="products">
+    <section id="products" class="products">
         <div class="products-header" >
             
             <h2>Nossos Pneus</h2>
@@ -87,7 +86,7 @@
             </div>
 
             <div class="product-card" >
-                <img class="pneu-imagem" src="img/pneus-de-alta-performance2.png" alt="pneus-de-alta-performance">
+                <img class="pneu-imagem" src="img/pneu-caminhão.jpg" alt="pneus-de-alta-performance">
                 <div class="product-description">
                 <h4>Pneus de Caminhão</h4>
                 <p>Para cargas pesadas, com durabilidade totalmente excepcional</p>
@@ -104,7 +103,7 @@
             </div>
 
             <div class="product-card">
-                <img class="pneu-imagem" src="img/pneus-de-alta-performance3.webp" alt="pneus-de-alta-performance">
+                <img class="pneu-imagem" src="img/pneus-run-flat.webp" alt="pneus-de-alta-performance">
                 <div class="product-description">
                 <h4>Pneus Run Flat</h4>
                 <p>Tecnologia avançada que permite rodar mesmo com o pneu furado</p>
@@ -115,7 +114,7 @@
                 </ul>
                 </div>
                 <div class="lista-orçamento">
-                    <p>A partir de R$ 299</p>
+                    <p>A partir de R$ 800</p>
                     <button>Solicitar Orçamento</button>
                 </div>
             </div>
@@ -125,7 +124,7 @@
         
     </section>
 
-<section class="services">
+<section id="services" class="services">
     
     <div class="services-header">
         <h2>Nossos serviços</h2>
@@ -164,7 +163,7 @@
         </div>
     </section>
 
-    <section class="testimonials">
+    <section id="testimonials" class="testimonials">
         <div class="testimonials-header">
             <span class="tag">Depoimentos</span>
             <h2>O Que Dizem Nossos Clientes</h2>
@@ -194,7 +193,7 @@
         </div>
     </section>
 
-    <section class="contact-section">
+    <section id="contact-section" class="contact-section">
         <div class="contact-form-container">
             <span class="tag-contact">Contato</span>
             <h2>Solicite um Orçamento</h2>
@@ -213,7 +212,8 @@
                 <label for="mensagem">Mensagem</label>
                 <textarea id="mensagem" name="mensagem" placeholder="Descreva o que você precisa..."></textarea>
 
-                <button type="submit" class="btn-submit">Enviar Solicitação</button>
+                <button type="button" class="btn-submit" onclick="validateForm()">Enviar Solicitação</button>
+
             </form>
         </div>
 
@@ -260,9 +260,8 @@
 
         </div>
     </section>
-</main>
 
-    
-</main>
+    <script src="script.js"></script>
+
 </body>
 </html>
